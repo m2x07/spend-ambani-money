@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --fg: #0d0d0d;
+        --bg: hsl(0, 0%, 94.9%);
+        --bg2: hsl(0, 0%, 100%);
+        --muted: hsl(0, 0%, 52.9%);
+        --border: hsl(0, 0%, 76.9%);
+        --shadow: hsla(0, 0%, 0%, 0.26);
+    }
+    .dark {
+        --fg: hsl(0, 0%, 95.3%);
+        --bg: hsl(212.7, 16.9%, 12.7%);
+        --bg2: hsl(210, 13%, 9%);
+        --muted: hsl(205, 9.6%, 49%);
+        --border: hsl(211.8, 11.4%, 29.2%);
+        --shadow: hsl(213.3, 31%, 5.7%);
+    }
+
+    .heading-one-text {
+        filter: drop-shadow(3px 3px 0px red);
+    }
+
+    .btn-green {
+        @apply w-16 rounded-md bg-green-400 py-2 text-xl font-semibold active:bg-green-500 dark:bg-green-500 dark:active:bg-green-600;
+    }
+    .btn-red {
+        @apply w-16 rounded-md bg-red-400 py-2 text-xl font-semibold active:bg-red-500 dark:bg-red-500 dark:active:bg-red-600;
+    }
+}
