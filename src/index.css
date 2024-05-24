@@ -32,4 +32,9 @@
     .btn-red {
         @apply w-16 rounded-md bg-red-400 py-2 text-xl font-semibold active:bg-red-500 dark:bg-red-500 dark:active:bg-red-600;
     }
+    .input {
+        -webkit-appearance: textfield;
+        -moz-appearance: textfield;
+        margin: 0,
+    }
 }

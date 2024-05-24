@@ -20,7 +20,7 @@ const ThemeProviderContext = createContext<ThemeProviderState>(initialState);
 
 export default function ThemeProvider({ children, ...props }: ThemeProviderProps) {
     const [theme, setTheme] = useState<Theme>(
-        () => (localStorage.getItem("theme") as Theme) || "system"
+        () => (localStorage.getItem("theme") as Theme) || "system",
     );
 
     useEffect(() => {
@@ -30,7 +30,7 @@ export default function ThemeProvider({ children, ...props }: ThemeProviderProps
             const sysTheme = window.matchMedia("(prefers-color-scheme: dark)").matches
                 ? "dark"
                 : "light";
-            setTheme(sysTheme)
+            setTheme(sysTheme);
             root.classList.add(sysTheme);
             return;
         }
@@ -57,7 +57,7 @@ export function useTheme() {
     const context = useContext(ThemeProviderContext);
 
     if (context === undefined) {
-        throw new Error ("useTheme can only be used inside ThemeProvider");
+        throw new Error("useTheme can only be used inside ThemeProvider");
     }
 
     return context;
