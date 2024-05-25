@@ -28,10 +28,10 @@ function App() {
                 </div>
                 <div className="sticky top-0 mb-3 flex flex-col justify-between gap-2 bg-bg text-center text-xl font-medium text-black md:flex-row md:text-2xl">
                     <div className="flex justify-center rounded-md bg-green-400 p-2 md:flex-1 dark:bg-green-500">
-                        Net Worth: $ {bal}
+                        Net Worth: $ {bal.toFixed(0)}
                     </div>
                     <div className="flex justify-center rounded-md bg-blue-400 p-2 md:flex-1 dark:bg-blue-500">
-                        You Spent: $ {spent} ({spentInPercent}%)
+                        You Spent: $ {spent.toFixed(2)} ({spentInPercent}%)
                     </div>
                 </div>
                 <div className="mb-3 flex flex-wrap justify-evenly gap-x-2 gap-y-8 rounded-md bg-bg p-2 py-4">
