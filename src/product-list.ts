@@ -82,7 +82,7 @@ const items: Item[] = [
         id: 12,
         name: "Iphone",
         price: 900,
-        imgUrl: "/img/products/prime.webp",
+        imgUrl: "/img/products/iphone.webp",
     },
     {
         id: 13,
