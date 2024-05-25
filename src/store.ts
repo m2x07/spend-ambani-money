@@ -75,8 +75,7 @@ export const useCartStore = create<StoreState>()((set) => ({
             if (isNaN(newQuantity)) {
                 newQuantity = 0;
             }
-            const prevQuantity =
-                state.cart[_index] == undefined ? 0 : state.cart[_index].quantity;
+            const prevQuantity = state.cart[_index] == undefined ? 0 : state.cart[_index].quantity;
 
             // diff is the difference between the previous item quantity and the new one
             // it is used to calculate the values for moneySpent and availableNetworth

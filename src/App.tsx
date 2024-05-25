@@ -1,3 +1,4 @@
+import Footer from "./components/footer.tsx";
 import Header from "./components/header";
 import ItemCard from "./components/item-card";
 import products from "./product-list.ts";
@@ -5,8 +6,9 @@ import { useCartStore } from "./store.ts";
 
 function App() {
     const bal = useCartStore((state) => state.availableNetworth);
-    const spent = useCartStore((state) => state.moneySpent)
-    const spentInPercent = ((spent/110000000000)*100).toFixed(2)
+    const spent = useCartStore((state) => state.moneySpent);
+    const spentInPercent = ((spent / 110000000000) * 100).toFixed(2);
+
     return (
         <>
             <Header />
@@ -24,7 +26,7 @@ function App() {
                         </span>
                     </div>
                 </div>
-                <div className="mb-3 flex flex-col justify-between text-black gap-2 text-center text-xl font-medium md:flex-row md:text-2xl">
+                <div className="sticky top-0 mb-3 flex flex-col justify-between gap-2 bg-bg text-center text-xl font-medium text-black md:flex-row md:text-2xl">
                     <div className="flex justify-center rounded-md bg-green-400 p-2 md:flex-1 dark:bg-green-500">
                         Net Worth: $ {bal}
                     </div>
@@ -46,6 +48,7 @@ function App() {
                     ))}
                 </div>
             </div>
+            <Footer />
         </>
     );
 }

@@ -36,7 +36,7 @@ export default function ItemCard({ item }: ItemCartProp) {
 
     return (
         <div className="flex w-[350px] max-w-[350px] shrink flex-col gap-2 rounded-md bg-secondary p-2">
-            <div className="flex aspect-square w-full items-center">
+            <div className="flex aspect-square w-full items-center justify-center p-5">
                 <img src={item.url} alt={item.name} />
             </div>
             <div className="text-center">

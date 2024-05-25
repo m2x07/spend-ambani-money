@@ -42,7 +42,7 @@ Images
    the same on windows.
 
 ```bash
-$ for i in *.png; do cwebp $i -o "output/`echo $i | sed 's/\.png/\.webp/g'`"; done;
+$ for i in *.png *.jpg; do cwebp $i -o "output/$(echo $i | sed -E 's/\.(png|jpg)/\.webp/')"; done;
 ```
 
 4. The directory structure should now look like this:
