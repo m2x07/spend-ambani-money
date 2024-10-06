@@ -15,19 +15,19 @@ const items: Item[] = [
     {
         id: 1,
         name: "McNuggets (6pcs)",
-        price: 4.00,
+        price: 4.0,
         imgUrl: "/img/products/mc-nuggets.webp",
     },
     {
         id: 2,
         name: "Steak Quasadilla",
-        price: 11.60,
+        price: 11.6,
         imgUrl: "/img/products/quesadilla.webp",
     },
     {
         id: 3,
         name: "Burrito Bowl",
-        price: 13.60,
+        price: 13.6,
         imgUrl: "/img/products/buritto-bowl.webp",
     },
     {
@@ -172,7 +172,7 @@ const items: Item[] = [
         id: 27,
         name: "Personal Z+ Security Unit, 1 year",
         price: 3000000,
-        imgUrl: "/img/products/security.webp"
+        imgUrl: "/img/products/security.webp",
     },
     {
         id: 28,
@@ -305,7 +305,7 @@ const items: Item[] = [
         name: "Entire steam store",
         price: 1000000,
         imgUrl: "/img/products/steam.webp",
-    }
+    },
 ];
 
 export default items;

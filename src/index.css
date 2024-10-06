@@ -35,6 +35,6 @@
     .input {
         -webkit-appearance: textfield;
         -moz-appearance: textfield;
-        margin: 0,
+        margin: 0;
     }
 }
